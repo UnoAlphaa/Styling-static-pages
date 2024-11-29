@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1{
+    flex-basis: 43%;
+    flex-grow: 1;
+    background: url(./music-fest-img/background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+}
+.left-images{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+}
+.search{
+    cursor: pointer;
+    width: 30px;
+}
+.left-text{
+    margin-top: 150px;
+    color: #fff;
+}
+.left-text h2{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 30px;
+}
+.left-text h3{
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.left-text p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.play{
+    width: 70px;
+    cursor: pointer;
+}
+.left-text a{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+.left-text a img{
+    margin-right: 10px;
+}
+
+
+
+.col-2{
+    flex-basis: 57%;
+    flex-grow: 1;
+    background: url(./music-fest-img/music.png);
+    background-position:bottom;
+    background-repeat:no-repeat;
+    background-size: cover;
+    padding: 40px 80px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #222;
+    padding: 0 6px;
+    font-weight: 500;
+}
+.btn{
+    display: block;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    padding: 8px 20px;
+    font-weight: 600;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.9);
+    transition: transform 1s;
+}
+.btn:hover{
+    transform: rotate(360deg);
+}
+.right-text{
+    margin-top: 150px;
+    color: #222;
+}
+.right-text h2{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    color: crimson;
+}
+.right-text h3{
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 20px;
+    color: crimson;
+    margin-bottom: 20px;
+}
+.right-text p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.btn-1{
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    background: crimson;
+    color: #fff;
+    padding: 10px 30px;
+    box-shadow: 0 5px 10px rgba(225, 90, 90, 0.7);
+    font-weight: 700;
+    transition: transform .4s;
+}
+.btn-1:hover{
+    transform: translateY(-6px);
+}

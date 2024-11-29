@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+}
+.side-nav{
+    padding: 20px 30px;
+    width: 250px;
+    height: 100%;
+    background: #f307c0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo{
+    display: block;
+    margin-bottom: 130px;
+}
+.logo-img{
+    width: 200px;
+}
+.nav-links{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.nav-links li{
+    list-style: none;
+    padding: 20px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+.bg{
+    background: #fff;
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    box-shadow: 0 3px 2px rgba(255, 255, 255, 0.4);
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 1%;
+    display: none;
+    transition: linear .3s;
+}
+.nav-links li:hover a{
+    color: #0080ff;
+    transition: .3s;
+}
+.nav-links li:hover ~.bg{
+    display: block;
+}
+.nav-links li:nth-child(1):hover ~.bg{
+    top: 1%;
+}
+.nav-links li:nth-child(2):hover ~.bg{
+    top: 10.5%;
+}
+.nav-links li:nth-child(3):hover ~.bg{
+    top:20%;
+}
+.nav-links li:nth-child(4):hover ~.bg{
+    top:30%;
+}
+.nav-links li:nth-child(5):hover ~.bg{
+    top:39%;
+}
+.nav-links li:nth-child(6):hover ~.bg{
+    top: 49%;
+}
+
+
+/**Accordion css*/
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #0080ff;
+    padding: 20px;
+}
+.accordion{
+    margin: 0 auto;
+    width: 600px;
+}
+.accordion li{
+    list-style: none;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.accordion label{
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span{
+    transform: rotate(90deg);
+}
+.accordion label + input[type="radio"]{
+    display: none;
+}
+.content{
+    line-height: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: linear .3s;
+}
+.accordion label + input[type="radio"]:checked + .content{
+    max-height: 400px;
+    padding: 10px;
+}
+/**Accordion End/
+
+/**progressbar start*/
+
+.bar-container{
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills h3{
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.progress-bar{
+    width: 600px;
+    height: 10px;
+    background: #959595;
+    border-radius: 5px;
+}
+.progress-bar div{
+    width: 50%;
+    height: 10px;
+    border-radius: 5px;
+    
+}
+.progress-bar div span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #222;
+    color: #fff;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(360deg);
+    
+}
+
+.html{
+    background: #e91e63;
+    animation: html 1s linear forwards;
+}
+.css{
+    background: #cddc39;
+    animation: css 1s linear forwards;
+}
+.javascript{
+    background: #00bcd4;
+    animation: javascript 1s linear forwards;
+}
+.bootstrap{
+    background: #ffeb3b;
+    animation: bootstrap 1s linear forwards;
+}
+.react{
+    background: #9c27b0;
+    animation: react 1s linear forwards;
+}
+
+.html span{
+    border: 1px solid #e91e63;
+}
+.css span{
+    border: 1px solid #cddc39;
+}
+.javascript span{
+    border: 1px solid #0080ff;
+}
+.bootstrap span{
+    border: 1px solid #ffeb3b;
+}
+.react span{
+    border: 1px solid #9c27b0;
+}
+
+@keyframes html{
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    100%{
+        width: 78%;
+    }
+}
+@keyframes javascript{
+    100%{
+        width: 60%;
+    }
+}
+@keyframes bootstrap{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes react{
+    100%{
+        width: 40%;
+    }
+}
+/** End progress bar*/
+
+/**Profile start*/
+.profile-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    background: #32384f;
+    max-width: 320px;
+    width: 90%;
+    border-radius: 5px;
+    padding: 30px 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+}
+.top-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.fa-heart{
+    margin-right: 10px;
+    cursor: grab;
+}
+.fa-heart:hover{
+    color: red;
+    transition: .3s;
+}
+.img-profile{
+    margin-top: 20px;
+    width: 20%;
+    border-radius: 50%;
+}
+.profile h2{
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 20px;
+    color: #8d68c5;
+}
+.profile p{
+    font-size: 12px;
+    color: #e34494;
+
+}
+.btn{
+    padding: 14px 30px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #8d68c5, #e34494);
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    transition: .4s;
+}
+.btn:hover{
+    transform: rotate(360deg);
+
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.social-media div a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 100px;
+}
+.social-media div a i{
+    font-size: 40px;
+    
+}
+.social-media h3{
+    margin-top: 5px;
+}
+.fa-instagram{
+    color: #e34494;
+}
+.fa-dribbble{
+    color: #fff;
+}
+.fa-telegram{
+    color:#229ED9
+}
